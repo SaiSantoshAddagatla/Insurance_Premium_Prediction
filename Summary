@@ -1,0 +1,37 @@
+Project Objective
+To analyze health-related variables and predict insurance premium prices using machine learning models. The goal was to derive insights from the data and build an accurate, explainable model to assist insurance firms in risk assessment and pricing strategies.
+
+Block 1: Exploratory Data Analysis (EDA)
+Key Findings:
+Age is the strongest predictor of PremiumPrice (r = 0.70).
+Moderate predictors: AnyTransplants, NumberOfMajorSurgeries, Chronic Diseases, and Blood Pressure Problems.
+Weak or negligible correlation with Diabetes, Weight, Cancer History, Allergies, and BMI.
+
+Strong interdependencies found:
+BMI ↔ Weight (r = 0.82)
+BMI ↔ Height (r = -0.50)
+
+Block 2: Hypothesis Testing
+T-Tests:
+Statistically significant premium differences found for:
+Diabetes, BloodPressureProblems, AnyTransplants, AnyChronicDiseases, HistoryOfCancerInFamily
+No significant difference for KnownAllergies.
+ANOVA:
+BMI Category shows significant variation in mean PremiumPrice (p = 0.006 → reject null).
+Chi-Square:
+AnyChronicDiseases and HistoryOfCancerInFamily are not associated (p = 0.88).
+
+Block 3: Feature Engineering & Modeling
+Models Built:
+Linear Regression (Baseline): Rsquare = 0.71, RMSE = 3494
+Gradient Boosting: Rsquare = 0.87, RMSE = 2382
+Random Forest (Best Model):
+Rsquare = 0.90
+MAE = 987
+RMSE = 2053 (after tuning)
+
+Feature Engineering Highlights:
+Introduced BMI as a derived feature.
+Created BMI Category for ANOVA and grouped risk analysis.
+Applied StandardScaler on numerical features before model input.
+
