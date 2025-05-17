@@ -61,7 +61,8 @@ The primary evaluation metric for model selection was **Root Mean Squared Error 
 
 - Tableau Dashboard: [Link to Tableau](https://public.tableau.com/views/MedicalInsurancePremiumAnalysis_17469490918310/Dashboard2-PremiumPricing?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 - Google Colab Notebook: [Link to Colab](https://colab.research.google.com/drive/1OKnvltVOXv9tVCdHsW45PjS4TXWgjON-?usp=sharing)  
-- Streamlit App: Can be run locally using the steps below (http://localhost:8501/)
+- Streamlit App: Can be run locally using the steps below (https://insurancepremiumprediction-sugdbsxopwvm5gnput2uw6.streamlit.app)
+- Medium Technical Blog: [Link to Medium](https://medium.com/@saisantosh24898/predicting-insurance-premiums-using-machine-learning-a-complete-technical-journey-953137f1e348)
 
 
 ---
